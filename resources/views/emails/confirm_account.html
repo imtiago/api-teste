@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #container {
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        background-color: rgb(231, 224, 224);
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 120px;
+        background-color: rgba(0, 11, 165, 0.719);
+        padding-top: 3%;
+        flex-direction: row;
+      }
+      main {
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20%;
+      }
+      #btnValidator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #btnValidator > input {
+        background-color: violet;
+      }
+      #btnValidator:hover {
+        cursor: pointer;
+
+      }
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        font-family: sans-serif;
+        width: 100%;
+        background-color: rgba(0, 11, 165, 0.719);
+      }
+      .redes_sociais{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    </style>
+    <title>Confirmação de Conta</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img src="../assents/images/logo.png" width="70px" height="40px" alt="Logo da empresa">
+        <h1>Sistema de Concursos</h1>
+    </header>
+      <main>
+        <h1>Bem Vindo <%= user.name %></h1>
+        <h2>Ativação da conta</h2>
+        <p>
+            Estamos Muito felizes por você! </br> Vamos iniciar a validação da sua conta
+        </p>
+        <div id="btnValidator">
+
+            <a href="<%= url %>">
+                <button type="button">Click-me para validar sua conta</button>
+            </a>
+        </div>
+      </main>
+      <footer>
+    <div>
+        <p>Tiago Oliveira Developement</p>
+        <p>tiago.ufac@gmail.com</p>
+        <p>(68) 98424-1179 </p>
+      <ul class="redes_sociais">
+        <li>
+          <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+              <img src="<%=url%>/img/images/image-2.png" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+            </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" title="Linkkin " target="_blank">
+              <img src="<%=url%>/img/images/image-2.png" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+            </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" title="telegran" target="_blank">
+              <img src="<%=url%>/img/images/image-2.png" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+            </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+        <p>Nome do sistema</p>
+        <p>email</p>
+        <p>whatsapp</p>
+      <ul class="redes_sociais">
+        <li>
+          <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+              <img src="<%=url%>/img/images/image-2.png" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+            </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" title="Linkkin " target="_blank">
+              <img src="<%=url%>/img/images/image-2.png" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+            </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" title="telegran" target="_blank">
+              <img src="<%=url%>/img/images/image-2.png" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+            </a>
+        </li>
+      </ul>
+    </div>
+      </footer>
+    </div>
+  </body>
+</html>
